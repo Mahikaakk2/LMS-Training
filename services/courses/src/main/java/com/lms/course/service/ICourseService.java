@@ -1,4 +1,17 @@
 package com.lms.course.service;
 
+import com.lms.course.dto.CourseDto;
+
+import java.util.List;
+
 public interface ICourseService {
+    List<CourseDto> fetchAllPendingCourseDetails();
+
+    void createCourse(CourseDto courseDto);
+
+    boolean approveCourse(int courseId);
+
+    boolean updateCourse(int courseId, CourseDto courseDto);
+
+    boolean deleteCourse(int courseId);
 }

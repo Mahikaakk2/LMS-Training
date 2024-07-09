@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Time;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -25,9 +26,9 @@ public class Course {
     private Time courseDuration;
     private String courseResource;
     private String courseCategory;
-    private Date createdAt;
+    private LocalDateTime createdAt;
     private int createdBy;
-    private Date updatedAt;
+    private LocalDateTime updatedAt;
     private Integer updatedBy; // Use Integer for nullable int
     private boolean isApproved;
 }
