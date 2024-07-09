@@ -2,6 +2,7 @@ package com.lms.training.service.impl;
 
 import com.lms.training.dto.UserDto;
 import com.lms.training.entity.User;
+import com.lms.training.exception.MentorDeletionException;
 import com.lms.training.exception.ResourceNotFoundException;
 import com.lms.training.exception.UserAlreadyExistsException;
 import com.lms.training.mapper.UserMapper;
@@ -89,6 +90,26 @@ public class UserServiceImpl implements IUserService {
             isUpdated=true;
         }
         return  isUpdated;
+    }
+
+    @Override
+    public boolean deleteUser(String email){
+        boolean isDeleted=false;
+        User user=userRepository.findByEmail(email).orElseThrow(
+                ()->new ResourceNotFoundException("User","email",email)
+        );
+
+        if(user!=null) {
+            if(user.getRole().equals("newJoiner")) {
+                userRepository.deleteById(user.getUserId());
+                isDeleted=true;
+            }
+            else{
+                throw new MentorDeletionException("Cannot delete user because user is a mentor.");
+            }
+
+        }
+        return isDeleted;
     }
 
 }

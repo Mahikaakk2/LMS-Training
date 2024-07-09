@@ -35,5 +35,10 @@ public class GlobalExceptionHandler {
 
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponseDto);
     }
+
+    @ExceptionHandler(MentorDeletionException.class)
+    public ResponseEntity<String> handleMentorDeletionException(MentorDeletionException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+    }
 }
 

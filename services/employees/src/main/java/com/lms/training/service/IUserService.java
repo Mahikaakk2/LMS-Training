@@ -10,4 +10,5 @@ public interface IUserService {
     List<UserDto> fetchAllUsers();
     List<UserDto> fetchAllUsersByRole(String role);
     boolean updateUserDetails(String email,UserDto userDto);
+    boolean deleteUser(String email);
 }

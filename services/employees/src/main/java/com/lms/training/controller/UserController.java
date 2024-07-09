@@ -62,6 +62,17 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.NOT_MODIFIED).body(new ResponseDto("500", "Not Updated"));
         }
     }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity<ResponseDto> delete(@RequestParam String email) {
+        boolean isDeleted=iUserService.deleteUser(email);
+        if(isDeleted) {
+            return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto("204", "Deleted Successfully"));
+        }
+        else{
+            return ResponseEntity.status(HttpStatus.NOT_MODIFIED).body(new ResponseDto("500", "Not Deleted"));
+        }
+    }
     @GetMapping("/hello")
     public ResponseEntity<String> helloWorld() {
         return ResponseEntity.status(HttpStatus.OK).body("Hello World");
