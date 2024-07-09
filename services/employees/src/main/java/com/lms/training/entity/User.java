@@ -10,15 +10,17 @@ import java.time.LocalDateTime;
 
 
 @Entity
-@Table(name="User")
+@Table(name="Employee")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long userId;
+    private Long userId;
     private String firstName;
     private String lastName;
     private String email;

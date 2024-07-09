@@ -2,7 +2,7 @@ server:
   port: 9000
 spring:
   application:
-    name: "accounts"
+    name: "employee"
   devtools:
     livereload:
       enabled: true
