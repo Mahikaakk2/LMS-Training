@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api")
 @AllArgsConstructor
@@ -27,6 +29,14 @@ public class UserController {
     @GetMapping("/fetch")
     public ResponseEntity<UserDto> fetchUser(@RequestParam String email){
         UserDto userDto= iUserService.fetchUserDetails(email);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(userDto);
+    }
+
+    @GetMapping("/fetchAll")
+    public ResponseEntity<List<UserDto>> fetchAll() {
+        List<UserDto> userDto= iUserService.fetchAllUsers();
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(userDto);

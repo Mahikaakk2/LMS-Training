@@ -11,6 +11,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -41,6 +43,20 @@ public class UserServiceImpl implements IUserService {
 
 
         return userDto;
+    }
+
+    @Override
+    public List<UserDto> fetchAllUsers() {
+        List<User> users = userRepository.findAll();
+
+        List<UserDto> userDtos = new ArrayList<>();
+
+        for(User user : users) {
+            UserDto userDto= UserMapper.mapToUserDto(user,new UserDto());
+            userDtos.add(userDto);
+
+        }
+        return userDtos;
     }
 
 }
