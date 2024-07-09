@@ -8,4 +8,5 @@ public interface IUserService {
     void createUser(UserDto userDto);
     UserDto fetchUserDetails(String email);
     List<UserDto> fetchAllUsers();
+    List<UserDto> fetchAllUsersByRole(String role);
 }

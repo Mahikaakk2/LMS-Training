@@ -42,6 +42,15 @@ public class UserController {
                 .body(userDto);
     }
 
+    @GetMapping("/fetchByRole")
+    public ResponseEntity<List<UserDto>> fetchAllUsersByRole(@RequestParam String role) {
+        List<UserDto> userDto= iUserService.fetchAllUsersByRole(role);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(userDto);
+    }
+
+
     @GetMapping("/hello")
     public ResponseEntity<String> helloWorld() {
         return ResponseEntity.status(HttpStatus.OK).body("Hello World");

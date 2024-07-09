@@ -59,4 +59,20 @@ public class UserServiceImpl implements IUserService {
         return userDtos;
     }
 
+    @Override
+    public List<UserDto> fetchAllUsersByRole(String role) {
+        List<User> users = userRepository.findAll();
+
+        List<UserDto> userDtos = new ArrayList<>();
+
+        for(User user : users) {
+            if(user.getRole().equals(role)) {
+                UserDto userDto= UserMapper.mapToUserDto(user,new UserDto());
+                userDtos.add(userDto);
+            }
+
+        }
+        return userDtos;
+    }
+
 }
