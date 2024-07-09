@@ -51,6 +51,17 @@ public class UserController {
     }
 
 
+    @PutMapping("/update")
+    public ResponseEntity<ResponseDto> update(@RequestBody UserDto userDto,
+                                              @RequestParam String email) {
+        boolean isUpdated=iUserService.updateUserDetails(email,userDto);
+        if(isUpdated) {
+            return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto("204", "Updated Successfully"));
+        }
+        else{
+            return ResponseEntity.status(HttpStatus.NOT_MODIFIED).body(new ResponseDto("500", "Not Updated"));
+        }
+    }
     @GetMapping("/hello")
     public ResponseEntity<String> helloWorld() {
         return ResponseEntity.status(HttpStatus.OK).body("Hello World");

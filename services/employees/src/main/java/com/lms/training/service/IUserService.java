@@ -9,4 +9,5 @@ public interface IUserService {
     UserDto fetchUserDetails(String email);
     List<UserDto> fetchAllUsers();
     List<UserDto> fetchAllUsersByRole(String role);
+    boolean updateUserDetails(String email,UserDto userDto);
 }
