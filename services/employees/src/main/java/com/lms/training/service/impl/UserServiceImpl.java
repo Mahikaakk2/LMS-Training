@@ -2,6 +2,7 @@ package com.lms.training.service.impl;
 
 import com.lms.training.dto.UserDto;
 import com.lms.training.entity.User;
+import com.lms.training.exception.ResourceNotFoundException;
 import com.lms.training.exception.UserAlreadyExistsException;
 import com.lms.training.mapper.UserMapper;
 import com.lms.training.repository.UserRepository;
@@ -17,6 +18,8 @@ import java.util.Random;
 @AllArgsConstructor
 public class UserServiceImpl implements IUserService {
     private final UserRepository userRepository;
+
+
     @Override
     public void createUser(UserDto userdto) {
 
@@ -30,6 +33,14 @@ public class UserServiceImpl implements IUserService {
         userRepository.save(user);
     }
 
+    @Override
+    public UserDto fetchUserDetails(String email){
+        User foundUser = userRepository.findByEmail(email).orElseThrow(()->new ResourceNotFoundException("User","email",email));
 
+        UserDto userDto= UserMapper.mapToUserDto(foundUser,new UserDto());
+
+
+        return userDto;
+    }
 
 }

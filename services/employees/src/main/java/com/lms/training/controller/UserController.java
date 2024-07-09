@@ -4,6 +4,7 @@ package com.lms.training.controller;
 import com.lms.training.dto.ResponseDto;
 import com.lms.training.dto.UserDto;
 import com.lms.training.service.IUserService;
+import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,11 +18,20 @@ public class UserController {
     private final IUserService iUserService;
 
     @PostMapping("/create")
-    public ResponseEntity<ResponseDto> createUser(@RequestBody UserDto userDto
-    ){
+    public ResponseEntity<ResponseDto> createUser(@RequestBody UserDto userDto)
+    {
         iUserService.createUser(userDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto("201","Created Successfully"));
     }
+
+    @GetMapping("/fetch")
+    public ResponseEntity<UserDto> fetchUser(@RequestParam String email){
+        UserDto userDto= iUserService.fetchUserDetails(email);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(userDto);
+    }
+
     @GetMapping("/hello")
     public ResponseEntity<String> helloWorld() {
         return ResponseEntity.status(HttpStatus.OK).body("Hello World");
