@@ -2,6 +2,7 @@ package com.lms.course.service.impl;
 
 import com.lms.course.dto.CourseDto;
 import com.lms.course.entity.Course;
+import com.lms.course.exception.ResourceNotFoundException;
 import com.lms.course.mapper.CourseMapper;
 import com.lms.course.repository.CourseRepository;
 import com.lms.course.service.ICourseService;
@@ -53,7 +54,8 @@ public class CourseServiceImpl implements ICourseService {
                 return false; //course already tue
             }
         } else {
-            return false; //course not found
+                //if course is not found then throw the exception
+                throw new ResourceNotFoundException("Course with ID " + courseId + " not found");
         }
     }
 
@@ -68,19 +70,21 @@ public class CourseServiceImpl implements ICourseService {
             return true;
 
         } else {
-            return false; // Course not found
+                throw new ResourceNotFoundException("Course with ID " + courseId + " not found");
         }
     }
 
     @Override
     public boolean deleteCourse(int courseId) {
+        boolean isDeleted=false;
         Optional<Course> optionalCourse = courseRepository.findById(courseId);
         if (optionalCourse.isPresent()) {
             courseRepository.deleteById(courseId);
-            return true;
+            isDeleted=true;
         } else {
-            return false; // course not found
+                throw new ResourceNotFoundException("Course with ID " + courseId + " not found");
         }
+        return isDeleted;
     }
 
     //this method is returning all the present courses in database
@@ -96,6 +100,10 @@ public class CourseServiceImpl implements ICourseService {
     @Override
     public CourseDto fetchCourseDetailById(int courseId) {
         Optional<Course> optionalCourse=courseRepository.findById(courseId);
+        //in case no course is found corresponding to this given id
+        if (optionalCourse.isEmpty()) {
+            throw new ResourceNotFoundException("Course with ID " + courseId + " not found");
+        }
         Course course=optionalCourse.get();
         CourseDto courseDto=CourseMapper.mapToCoursesDto(course,new CourseDto());
         return courseDto;
