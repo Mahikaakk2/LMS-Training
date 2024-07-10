@@ -99,7 +99,6 @@ public class CourseServiceImpl implements ICourseService {
         Course course=optionalCourse.get();
         CourseDto courseDto=CourseMapper.mapToCoursesDto(course,new CourseDto());
         return courseDto;
-
     }
 
 }
