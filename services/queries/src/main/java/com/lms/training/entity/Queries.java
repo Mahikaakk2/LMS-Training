@@ -21,14 +21,19 @@ public class Queries {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int queryId;
+
     @NotNull(message = "Query Text can not be empty")
     private String queryText;
+
     @NotNull(message = "New Joiner ID can not be empty")
     private int newJoinerId;
+
     @NotNull(message = "Mentor ID can not be empty")
     private int mentorId;
+
     @NotNull(message = "Course ID can not be empty")
     private int courseId;
+
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdAt;

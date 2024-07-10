@@ -7,6 +7,7 @@ public class QueriesMapper {
 
     public static QueriesDto mapToQueriesDto(Queries queries, QueriesDto queriesDto) {
         queriesDto.setQueryText(queries.getQueryText());
+//        queriesDto.setQueryId(queries.getQueryId());
         queriesDto.setStatus(queries.isStatus());
         queriesDto.setCourseId(queries.getCourseId());
         queriesDto.setMentorId(queries.getMentorId());
@@ -16,6 +17,7 @@ public class QueriesMapper {
 
     public static Queries mapToQueries(QueriesDto queriesDto, Queries queries ){
         queries.setQueryText(queriesDto.getQueryText());
+//        queries.setQueryId(queriesDto.getQueryId());
         queries.setStatus(queriesDto.isStatus());
         queries.setCourseId(queriesDto.getCourseId());
         queries.setMentorId(queriesDto.getMentorId());

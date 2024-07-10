@@ -49,7 +49,7 @@ public class CourseController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<ResponseDto> updateCourse(@RequestParam int courseId, @RequestBody CourseDto courseDto) {
+    public ResponseEntity<ResponseDto> updateCourse(@RequestParam int courseId, @Valid @RequestBody CourseDto courseDto) {
         boolean isUpdated = iCourseService.updateCourse(courseId, courseDto);
         if (isUpdated) {
             ResponseDto responseDto = new ResponseDto("200", "Course updated successfully");

@@ -4,6 +4,8 @@ package com.lms.training.controller;
 import com.lms.training.dto.ResponseDto;
 import com.lms.training.dto.UserDto;
 import com.lms.training.service.IUserService;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Validated
 @RestController
 @RequestMapping("/api")
 @AllArgsConstructor
@@ -20,14 +23,14 @@ public class UserController {
     private final IUserService iUserService;
 
     @PostMapping("/create")
-    public ResponseEntity<ResponseDto> createUser(@RequestBody UserDto userDto)
+    public ResponseEntity<ResponseDto> createUser(@Validated @RequestBody UserDto userDto)
     {
         iUserService.createUser(userDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto("201","Created Successfully"));
     }
 
     @GetMapping("/fetch")
-    public ResponseEntity<UserDto> fetchUser(@RequestParam String email){
+    public ResponseEntity<UserDto> fetchUser(@Email(message = "Email should be in proper format")@RequestParam String email){
         UserDto userDto= iUserService.fetchUserDetails(email);
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -52,7 +55,7 @@ public class UserController {
 
 
     @PutMapping("/update")
-    public ResponseEntity<ResponseDto> update(@RequestBody UserDto userDto,
+    public ResponseEntity<ResponseDto> update(@Validated @RequestBody UserDto userDto,
                                               @RequestParam String email) {
         boolean isUpdated=iUserService.updateUserDetails(email,userDto);
         if(isUpdated) {
