@@ -10,10 +10,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class QueriesDto {
-    private String queryText;
+//    private int queryId;
     private int newJoinerId;
     private int mentorId;
     private int courseId;
+    private String queryText;
     private boolean status;
 
 }
