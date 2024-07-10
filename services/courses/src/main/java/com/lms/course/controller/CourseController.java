@@ -72,5 +72,32 @@ public class CourseController {
         }
     }
 
+    //api to fetch all the courses present in the database
+    @GetMapping("/fetchAllCourses")
+    public ResponseEntity<List<CourseDto>> fetchAllCourses(){
+
+        List<CourseDto> courses =iCourseService.fetchAllCourseDetails();
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(courses);
+    }
+
+    //api to fetch a particular course details using courseId
+    @GetMapping("/fetchCourseById")
+    public  ResponseEntity<CourseDto> fetchCouseById(@RequestParam int courseId){
+        CourseDto courseDto=iCourseService.fetchCourseDetailById(courseId);
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(courseDto);
+    }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> hello(){
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Api is working");
+    }
 
 }

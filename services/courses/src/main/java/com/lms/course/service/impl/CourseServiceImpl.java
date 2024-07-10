@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -80,6 +81,25 @@ public class CourseServiceImpl implements ICourseService {
         } else {
             return false; // course not found
         }
+    }
+
+    //this method is returning all the present courses in database
+    @Override
+    public List<CourseDto> fetchAllCourseDetails() {
+
+        List<Course> courses=courseRepository.findAll();
+        return courses.stream()
+                .map(course -> CourseMapper.mapToCoursesDto(course, new CourseDto())) // Map each Course entity to CourseDto
+                .collect(Collectors.toList()); // Collect and return the list of CourseDto
+    }
+
+    @Override
+    public CourseDto fetchCourseDetailById(int courseId) {
+        Optional<Course> optionalCourse=courseRepository.findById(courseId);
+        Course course=optionalCourse.get();
+        CourseDto courseDto=CourseMapper.mapToCoursesDto(course,new CourseDto());
+        return courseDto;
+
     }
 
 }

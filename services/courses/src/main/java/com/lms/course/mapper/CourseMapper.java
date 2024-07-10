@@ -6,6 +6,7 @@ import com.lms.course.entity.Course;
 public class CourseMapper {
 
     public static CourseDto mapToCoursesDto(Course course , CourseDto courseDto){
+        courseDto.setCourseId(course.getCourseId());
         courseDto.setCourseTitle(course.getCourseTitle());
         courseDto.setCourseDescription(course.getCourseDescription());
         courseDto.setCourseDuration(course.getCourseDuration());
@@ -16,6 +17,7 @@ public class CourseMapper {
     }
 
     public static Course mapToCourse(CourseDto courseDto , Course course){
+        course.setCourseId(courseDto.getCourseId());
         course.setCourseDescription(courseDto.getCourseDescription());
         course.setCourseTitle(courseDto.getCourseTitle());
         course.setCourseDuration(courseDto.getCourseDuration());

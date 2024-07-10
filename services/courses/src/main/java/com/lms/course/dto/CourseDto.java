@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor
 public class CourseDto {
 
+    private int courseId;
     private String courseTitle;
     private String courseDescription;
     private Time courseDuration;

@@ -14,4 +14,9 @@ public interface ICourseService {
     boolean updateCourse(int courseId, CourseDto courseDto);
 
     boolean deleteCourse(int courseId);
+
+    //to fetch the details of all courses
+    List<CourseDto> fetchAllCourseDetails();
+
+    CourseDto fetchCourseDetailById(int courseId);
 }
