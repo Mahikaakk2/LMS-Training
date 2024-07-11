@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +42,10 @@
   "keyToString": {
     "Application.CourseApplication.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "aditi-branch",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupProject/services/configserver"
+    "last_opened_file_path": "C:/Users/aditi.kumari/IdeaProjects/LMS-Training/services/configserver",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -53,7 +53,7 @@
       <recent name="C:\Users\mahika.kushwaha\OneDrive - UKG\Desktop\GroupProject\services\docker-compose" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.EurekaserverApplication">
     <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lms.course.CourseApplication" />
       <module name="training" />
@@ -67,8 +67,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.configserver.ConfigserverApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sk.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigserverApplication" />
         <item itemvalue="Application.CourseApplication" />
       </list>
     </recent_temporary>
