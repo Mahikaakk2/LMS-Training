@@ -16,4 +16,5 @@ public class CourseDto {
     private String courseResource;
     private String courseCategory;
     private boolean isApproved;
+    private int createdBy;
 }

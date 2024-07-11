@@ -35,9 +35,9 @@ public class CourseServiceImpl implements ICourseService {
 
     @Override
     public void createCourse(CourseDto courseDto) {
+
         Course course = CourseMapper.mapToCourse( courseDto,new Course());
         course.setCreatedAt((LocalDateTime.now()));
-        course.setCreatedBy(000);
         courseRepository.save(course);
     }
 
@@ -108,5 +108,16 @@ public class CourseServiceImpl implements ICourseService {
         CourseDto courseDto=CourseMapper.mapToCoursesDto(course,new CourseDto());
         return courseDto;
     }
+
+    //api to get all the courses of a particular mentor
+    @Override
+    public List<CourseDto> getAllCourseDetails(int mentorId) {
+        List<Course> courses=courseRepository.findBycreatedBy(mentorId);
+
+        return courses.stream()
+                .map(course -> CourseMapper.mapToCoursesDto(course, new CourseDto())) // Map each Course entity to CourseDto
+                .collect(Collectors.toList());
+    }
+
 
 }

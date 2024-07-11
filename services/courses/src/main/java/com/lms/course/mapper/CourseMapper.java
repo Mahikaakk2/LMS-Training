@@ -13,6 +13,7 @@ public class CourseMapper {
         courseDto.setCourseResource(course.getCourseResource());
         courseDto.setCourseCategory(course.getCourseCategory());
         courseDto.setApproved(course.isApproved());
+        courseDto.setCreatedBy(course.getCreatedBy());
         return courseDto;
     }
 
@@ -24,6 +25,7 @@ public class CourseMapper {
         course.setCourseResource(courseDto.getCourseResource());
         course.setCourseCategory(courseDto.getCourseCategory());
         course.setApproved(courseDto.isApproved());
+        course.setCreatedBy(courseDto.getCreatedBy());
         return course;
     }
 
