@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/configserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/lms/configserver/ConfigserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/test/java/com/lms/configserver/ConfigserverApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/docker-compose_prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/docker-compose_qa.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "mahika-branch",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupProject/services/docker-compose"
   }
