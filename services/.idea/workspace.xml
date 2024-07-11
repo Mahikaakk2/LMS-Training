@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupProject/services/docker-compose"
+    "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupProject/services/configserver"
   }
 }]]></component>
   <component name="RecentsManager">
