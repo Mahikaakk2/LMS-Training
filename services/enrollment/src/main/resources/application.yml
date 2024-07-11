@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: "enrollments"
+    name: "accounts"
   devtools:
     livereload:
       enabled: true
