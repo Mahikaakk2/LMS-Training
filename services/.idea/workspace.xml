@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a691ef1-4229-4424-9e19-fe0b0538a0cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollment/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CourseApplication.executor": "Debug",
+    "git-widget-placeholder": "paridhi-branch"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lms.course.CourseApplication" />
+      <module name="courses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CourseApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
