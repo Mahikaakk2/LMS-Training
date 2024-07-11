@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/sk/eurekaserver/EurekaserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/test/java/com/sk/eurekaserver/EurekaserverApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enrollment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -33,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Mahikaakk2/LMS-Training.git&quot;,
-    &quot;accountId&quot;: &quot;2f05da47-b3df-4767-98c8-2a8acec7ed1c&quot;
+    &quot;accountId&quot;: &quot;0232eaea-3834-4465-8aeb-5860ce84984b&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -47,14 +52,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CourseApplication.executor": "Debug",
+    "Application.TrainingApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "paridhi-branch",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupProject/services/docker-compose"
+    "last_opened_file_path": "C:/Users/paridhi.gupta/OneDrive - UKG/Documents/LMS-Training/services/configserver"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paridhi.gupta\OneDrive - UKG\Documents\LMS-Training\services" />
       <recent name="C:\Users\mahika.kushwaha\OneDrive - UKG\Desktop\GroupProject\services\docker-compose" />
     </key>
   </component>
@@ -74,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseApplication" />
         <item itemvalue="Application.CourseApplication" />
       </list>
     </recent_temporary>
