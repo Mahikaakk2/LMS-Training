@@ -57,6 +57,7 @@ public class QueriesServiceImpl implements IQueriesService {
 
     @Override
     public List<QueriesDto> fetchByMentorId(int mentorId){
+
         List<Queries> allQueries= queriesRepository.findAll();
         List<QueriesDto> allQueriesDto= new ArrayList<>();
         for(Queries queries:allQueries) {
