@@ -1,8 +1,10 @@
 server:
-  port:8080
+  port:8090
 spring:
   application:
-    name: "accounts"
+    name: "courses"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
   devtools:
     livereload:
       enabled: true

@@ -1,0 +1,94 @@
+services:
+  configserver:
+    image: mahikakushwaha563/configserver:2.0.0
+    container_name: configserver
+    ports:
+      - "8071:8071"
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      start_period: 10s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - synergybank
+  courses:
+    image: mahikakushwaha563/courses:2.0.0
+    container_name: "courses-ms"
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_PROFILES_ACTIVE: 'qa'
+      SPRING_APPLICATION_NAME: "courses"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - synergybank
+  employees:
+    image: mahikakushwaha563/employees:2.0.0
+    container_name: "employees-ms"
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_PROFILES_ACTIVE: 'qa'
+      SPRING_APPLICATION_NAME: "employees"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - synergybank
+  queries:
+    image: mahikakushwaha563/queries:2.0.0
+    container_name: "queries-ms"
+    ports:
+      - "8070:8070"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_PROFILES_ACTIVE: 'qa'
+      SPRING_APPLICATION_NAME: "queries"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - synergybank
+  enrollment:
+    image: mahikakushwaha563/enrollment:2.0.0
+    container_name: "enrollment-ms"
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_PROFILES_ACTIVE: 'qa'
+      SPRING_APPLICATION_NAME: "enrollment"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - synergybank
+
+networks:
+  synergybank:
+    driver: "bridge"
