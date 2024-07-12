@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: "accounts"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
   devtools:
     livereload:
       enabled: true
