@@ -28,7 +28,7 @@ public class UserServiceImpl implements IUserService {
 
         Optional<User> foundUser=userRepository.findByEmail(userdto.getEmail());
         if(foundUser.isPresent()){
-            throw new UserAlreadyExistsException("User already exists for this mobile number"+userdto.getEmail());
+            throw new UserAlreadyExistsException("User already exists for this email : "+userdto.getEmail());
         }
         User user= UserMapper.mapToUser(userdto,new User());
         user.setCreatedAt(LocalDateTime.now());
