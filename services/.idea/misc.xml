@@ -9,8 +9,14 @@
         <option value="$PROJECT_DIR$/reponses/pom.xml" />
         <option value="$PROJECT_DIR$/employees/pom.xml" />
         <option value="$PROJECT_DIR$/enrollment/pom.xml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/gatewayserver/pom.xml" />
+=======
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/configserver/pom.xml" />
+>>>>>>> 14f6eed10ddc06b1f09793de3934f8a0766ebe2b
       </list>
     </option>
   </component>

@@ -8,6 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
+<<<<<<< HEAD
+        <module name="gatewayserver" />
+=======
+>>>>>>> 14f6eed10ddc06b1f09793de3934f8a0766ebe2b
         <module name="training (1)" />
         <module name="courses" />
         <module name="training (2)" />
@@ -28,6 +32,10 @@
       <module name="employees" options="-parameters" />
       <module name="enrollment" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+<<<<<<< HEAD
+      <module name="gatewayserver" options="-parameters" />
+=======
+>>>>>>> 14f6eed10ddc06b1f09793de3934f8a0766ebe2b
       <module name="queries" options="-parameters" />
       <module name="training" options="-parameters" />
       <module name="training (1)" options="-parameters" />
