@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/exception/QueryAlreadyResolvedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/TrainingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/QueryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/dto/QueriesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/dto/QueriesDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/entity/Queries.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/entity/Queries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/mapper/QueriesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/mapper/QueriesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/repository/QueriesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/repository/QueriesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/IQueriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/IQueriesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/impl/QueriesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/impl/QueriesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
