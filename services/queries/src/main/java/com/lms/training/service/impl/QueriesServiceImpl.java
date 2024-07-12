@@ -2,6 +2,8 @@ package com.lms.training.service.impl;
 
 import com.lms.training.dto.QueriesDto;
 import com.lms.training.entity.Queries;
+import com.lms.training.exception.QueryAlreadyResolvedException;
+import com.lms.training.exception.ResourceNotFoundException;
 import com.lms.training.mapper.QueriesMapper;
 import com.lms.training.repository.QueriesRepository;
 import com.lms.training.service.IQueriesService;
@@ -11,6 +13,8 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import static org.apache.commons.lang.ArrayUtils.isEquals;
 
 @Service
 @AllArgsConstructor
@@ -28,19 +32,20 @@ public class QueriesServiceImpl implements IQueriesService {
     }
 
     @Override
-    public boolean updateQuery(int queryId){
-        Optional<Queries> optionalQuery = queriesRepository.findById(queryId);
-        if (optionalQuery.isPresent()) {
-            Queries query = optionalQuery.get();
+    public boolean updateQuery(String responseText, Long queryId){
+        Optional<Queries> foundQuery = queriesRepository.findById(queryId);
+        if (foundQuery.isPresent()) {
+            Queries query = foundQuery.get();
             if (!query.isStatus()) {
+                query.setResponseText(responseText);
                 query.setStatus(true);
                 queriesRepository.save(query);
                 return true;
             } else {
-                return false; //course already tue
+                throw new QueryAlreadyResolvedException("Query already resolved for the QueryId " + queryId);
             }
         } else {
-            return false; //course not found
+            throw new ResourceNotFoundException("Query", "queryId", queryId.toString());
         }
     }
 
@@ -62,6 +67,33 @@ public class QueriesServiceImpl implements IQueriesService {
         List<QueriesDto> allQueriesDto= new ArrayList<>();
         for(Queries queries:allQueries) {
             if(queries.getMentorId()==mentorId) {
+                QueriesDto queryDto = QueriesMapper.mapToQueriesDto(queries, new QueriesDto());
+                allQueriesDto.add(queryDto);
+            }
+        }
+        return allQueriesDto;
+    }
+
+    @Override
+    public List<QueriesDto> fetchByNewJoinerId(int newJoinerId) {
+        List<Queries> allQueries= queriesRepository.findAll();
+        List<QueriesDto> allQueriesDto= new ArrayList<>();
+        for(Queries queries:allQueries) {
+            if(queries.getNewJoinerId()==newJoinerId) {
+                QueriesDto queryDto = QueriesMapper.mapToQueriesDto(queries, new QueriesDto());
+                allQueriesDto.add(queryDto);
+            }
+        }
+        return allQueriesDto;
+
+    }
+
+    @Override
+    public List<QueriesDto> fetchByStatus(Boolean status) {
+        List<Queries> allQueries= queriesRepository.findAll();
+        List<QueriesDto> allQueriesDto= new ArrayList<>();
+        for(Queries queries:allQueries) {
+            if(queries.isStatus()== status) {
                 QueriesDto queryDto = QueriesMapper.mapToQueriesDto(queries, new QueriesDto());
                 allQueriesDto.add(queryDto);
             }

@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS `queries` (
     `query_id` int AUTO_INCREMENT PRIMARY KEY,
     `query_text` varchar(2000) NOT NULL,
+    `response_text` varchar(2000) DEFAULT NULL,
     `newJoiner_id` int NOT NULL,
     `mentor_id` int NOT NULL,
     `course_id` int NOT NULL,

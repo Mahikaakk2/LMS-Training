@@ -21,7 +21,7 @@ public class EnrollmentController {
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@Validated @RequestBody EnrollmentsDto enrollmentsDto){
 
-        enrollmentService.createAccount(enrollmentsDto);
+        enrollmentService.createEnrollment(enrollmentsDto);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(new ResponseDto("201", "Created Successfully"));
@@ -30,13 +30,34 @@ public class EnrollmentController {
     //get all customers
     @GetMapping("/fetchAll")
     public ResponseEntity<List<EnrollmentsDto>> fetchAllAccount(){
-        List<EnrollmentsDto> enrollmentsDtos = enrollmentService.fetchAllAccountDetails();
+        List<EnrollmentsDto> enrollmentsDtos = enrollmentService.fetchAllEnrollmentDetails();
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(enrollmentsDtos);
     }
 
-
+    //get all customers
+    @GetMapping("/fetchByCourse")
+    public ResponseEntity<List<EnrollmentsDto>> fetchEnrollByCourse(@RequestParam int courseID){
+        List<EnrollmentsDto> enrollmentsDtos = enrollmentService.fetchEnrollmentsByCourseID(courseID);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(enrollmentsDtos);
+    }
+    @GetMapping("/fetchByMentor")
+    public ResponseEntity<List<EnrollmentsDto>> fetchEnrollByMentor(@RequestParam int mentorID){
+        List<EnrollmentsDto> enrollmentsDtos = enrollmentService.fetchEnrollmentsByMentorID(mentorID);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(enrollmentsDtos);
+    }
+    @GetMapping("/fetchByNewJoiner")
+    public ResponseEntity<List<EnrollmentsDto>> fetchEnrollByNewJoiner(@RequestParam int newJoinID){
+        List<EnrollmentsDto> enrollmentsDtos = enrollmentService.fetchEnrollmentsByNewJoinID(newJoinID);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(enrollmentsDtos);
+    }
     
     @GetMapping("/hello")
     public ResponseEntity<String> helloWorld() {

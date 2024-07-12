@@ -19,4 +19,7 @@ public interface ICourseService {
     List<CourseDto> fetchAllCourseDetails();
 
     CourseDto fetchCourseDetailById(int courseId);
+
+    List<CourseDto> getAllCourseDetails(int mentorId);
+
 }

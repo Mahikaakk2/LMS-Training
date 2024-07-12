@@ -23,13 +23,13 @@ public class Enrollments {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int EnrollmentID;
 
-    @NotNull(message="Account number cannot be empty")
+    @NotNull(message="Mentor ID cannot be empty")
     private int MentorID;
 
-    @NotNull(message="Account number cannot be empty")
+    @NotNull(message="Course ID cannot be empty")
     private int CourseID;
 
-    @NotNull(message="Account number cannot be empty")
+    @NotNull(message="New Join ID cannot be empty")
     private int NewJoinID;
 
     @CreatedBy

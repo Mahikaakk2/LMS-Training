@@ -2,16 +2,17 @@ package com.lms.training.service.impl;
 
 import com.lms.training.Dto.EnrollmentsDto;
 import com.lms.training.entity.Enrollments;
+import com.lms.training.exception.ResourceNotFoundException;
 import com.lms.training.mapper.EnrollmentsMapper;
 import com.lms.training.repository.EnrollmentRepository;
 import com.lms.training.service.EnrollmentService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -20,7 +21,7 @@ public class EnrollmentServiceImpl implements EnrollmentService {
     private final EnrollmentRepository enrollmentRepository;
 
     @Override
-    public void createAccount(EnrollmentsDto enrollmentsDto) {
+    public void createEnrollment(EnrollmentsDto enrollmentsDto) {
 //        Optional<Enrollments> foundEnrollment = EnrollmentRepository.findByNewJoinId(enrollmentsDto.getNewJoinID());
 //
 //        if(foundEnrollment.isPresent()){
@@ -35,7 +36,7 @@ public class EnrollmentServiceImpl implements EnrollmentService {
     }
 
     @Override
-    public List<EnrollmentsDto> fetchAllAccountDetails() {
+    public List<EnrollmentsDto> fetchAllEnrollmentDetails() {
         List<Enrollments> enrollments= enrollmentRepository.findAll();
         //change to dtos
         List<EnrollmentsDto> enrollmentsDtos= new ArrayList<>();
@@ -45,5 +46,45 @@ public class EnrollmentServiceImpl implements EnrollmentService {
             enrollmentsDtos.add(enroll);
         }
        return enrollmentsDtos;
+    }
+
+    @Override
+    public List<EnrollmentsDto> fetchEnrollmentsByCourseID(@RequestParam int courseID)
+    {
+        List<Enrollments> enrollments= enrollmentRepository.findAll();
+        List<EnrollmentsDto> enrollmentsDtos= new ArrayList<>();
+        for(Enrollments e:enrollments)
+        {   if(e.getCourseID()==courseID) {
+            EnrollmentsDto enroll = EnrollmentsMapper.mapToEnrollmentsDto(e, new EnrollmentsDto());
+            enrollmentsDtos.add(enroll);
+        }
+        }
+        return enrollmentsDtos;
+    }
+
+    @Override
+    public List<EnrollmentsDto> fetchEnrollmentsByMentorID(int mentorID) {
+        List<Enrollments> enrollments= enrollmentRepository.findAll();
+        List<EnrollmentsDto> enrollmentsDtos= new ArrayList<>();
+        for(Enrollments e:enrollments)
+        {   if(e.getMentorID()==mentorID) {
+            EnrollmentsDto enroll = EnrollmentsMapper.mapToEnrollmentsDto(e, new EnrollmentsDto());
+            enrollmentsDtos.add(enroll);
+        }
+        }
+        return enrollmentsDtos;
+    }
+
+    @Override
+    public List<EnrollmentsDto> fetchEnrollmentsByNewJoinID(int newJoinID) {
+        List<Enrollments> enrollments= enrollmentRepository.findAll();
+        List<EnrollmentsDto> enrollmentsDtos= new ArrayList<>();
+        for(Enrollments e:enrollments)
+        {   if(e.getNewJoinID()==newJoinID) {
+            EnrollmentsDto enroll = EnrollmentsMapper.mapToEnrollmentsDto(e, new EnrollmentsDto());
+            enrollmentsDtos.add(enroll);
+        }
+        }
+        return enrollmentsDtos;
     }
 }

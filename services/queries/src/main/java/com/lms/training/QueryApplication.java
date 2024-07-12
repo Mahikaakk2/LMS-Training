@@ -10,10 +10,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @OpenAPIDefinition
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @SpringBootApplication
-public class TrainingApplication {
+public class QueryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TrainingApplication.class, args);
+		SpringApplication.run(QueryApplication.class, args);
 	}
 
 }

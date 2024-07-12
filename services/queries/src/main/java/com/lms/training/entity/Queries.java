@@ -20,10 +20,12 @@ public class Queries {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int queryId;
+    private Long queryId;
 
     @NotNull(message = "Query Text can not be empty")
     private String queryText;
+
+    private String ResponseText;
 
     @NotNull(message = "New Joiner ID can not be empty")
     private int newJoinerId;

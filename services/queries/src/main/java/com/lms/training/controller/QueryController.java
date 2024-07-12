@@ -29,8 +29,8 @@ public class QueryController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<ResponseDto> updateQueries( @RequestParam int queryId){
-        boolean isUpdated = iQueriesService.updateQuery(queryId);
+    public ResponseEntity<ResponseDto> updateQueries(@RequestBody String responseText, @RequestParam Long queryId){
+        boolean isUpdated = iQueriesService.updateQuery(responseText, queryId);
         if(isUpdated){
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto("204","Updated Sucessfully"));
         }else{
@@ -50,6 +50,22 @@ public class QueryController {
     @GetMapping("/fetchByMentorId")
     public ResponseEntity<List<QueriesDto>> fetchByMentorId(@RequestParam int mentorId){
         List<QueriesDto> allQueriesDto = iQueriesService.fetchByMentorId(mentorId);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(allQueriesDto);
+    }
+
+    @GetMapping("/fetchByNewJoinerId")
+    public ResponseEntity<List<QueriesDto>> fetchByNewJoinerId(@RequestParam int newJoinerId){
+        List<QueriesDto> allQueriesDto = iQueriesService.fetchByNewJoinerId(newJoinerId);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(allQueriesDto);
+    }
+
+    @GetMapping("/fetchByStatus")
+    public ResponseEntity<List<QueriesDto>> fetchByStatus(@RequestParam Boolean status){
+        List<QueriesDto> allQueriesDto = iQueriesService.fetchByStatus(status);
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(allQueriesDto);
