@@ -5,18 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f52bae-66a0-4d7b-ab8f-1420d0c1c901" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/exception/QueryAlreadyResolvedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/TrainingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/QueryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/dto/QueriesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/dto/QueriesDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/entity/Queries.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/entity/Queries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/mapper/QueriesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/mapper/QueriesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/repository/QueriesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/repository/QueriesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/IQueriesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/IQueriesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/impl/QueriesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/service/impl/QueriesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -25,12 +43,12 @@
     &quot;assignee&quot;: &quot;Mahikaakk2&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mahikaakk2/LMS-Training.git&quot;,
-    &quot;accountId&quot;: &quot;2f05da47-b3df-4767-98c8-2a8acec7ed1c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mahikaakk2/LMS-Training.git",
+    "accountId": "0232eaea-3834-4465-8aeb-5860ce84984b"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -41,9 +59,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CourseApplication.executor": "Debug",
+    "Application.CourseApplication.executor": "Run",
+    "Application.QueryApplication.executor": "Run",
+    "Application.TrainingApplication.executor": "Run",
+    "Application.UserApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "paridhi-branch",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupProject/services/configserver"
   }
@@ -54,12 +75,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lms.course.CourseApplication" />
-      <module name="training" />
+    <configuration name="QueryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.QueryApplication" />
+      <module name="queries" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lms.course.*" />
+          <option name="PATTERN" value="com.lms.training.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueryApplication" />
         <item itemvalue="Application.CourseApplication" />
       </list>
     </recent_temporary>
