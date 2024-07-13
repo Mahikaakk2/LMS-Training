@@ -1,2 +1,6 @@
-#Ignore intelliJ idea
-.idea/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
