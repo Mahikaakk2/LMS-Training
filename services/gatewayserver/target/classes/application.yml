@@ -28,5 +28,5 @@ management:
 info:
   app:
     name: "Gateway Server"
-    description: "Gateway Server for Synergy Bank"
+    description: "Gateway Server for lms"
     version: "1.0.0"
