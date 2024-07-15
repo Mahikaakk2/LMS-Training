@@ -14,4 +14,5 @@ public interface CourseRepository extends JpaRepository<Course,Integer> {
 
     List<Course> findBycreatedBy(int mentorId);
 
+    List<Course> findByCreatedByAndIsApproved(int mentorId, boolean isApproved);
 }

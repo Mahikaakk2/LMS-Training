@@ -108,6 +108,17 @@ public class CourseController {
     }
 
 
+    //api to fetch the course details based on two parameters one is mentorId and another is isApproved
+
+    @GetMapping("/fetch-mentorId-isApproved")
+    public ResponseEntity<List<CourseDto>> fetchUsingMentorIdIsApproved(@RequestParam int mentorId,@RequestParam boolean isApproved){
+
+        List<CourseDto> courseDtoList=iCourseService.getCoursesUsingMentorIdAndIsApproved(mentorId,isApproved);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(courseDtoList);
+    }
+
     @GetMapping("/hello")
     public ResponseEntity<String> hello(){
         return ResponseEntity
