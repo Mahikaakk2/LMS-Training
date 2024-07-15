@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 public interface IQueriesService {
-    void createAccount(QueriesDto queriesDto);
+    void createQuery(QueriesDto queriesDto);
 
     boolean updateQuery(String responseText, Long queryId);
     List<QueriesDto> fetchAllQueries();
     List<QueriesDto> fetchByMentorId(Long mentorId);
     List<QueriesDto> fetchByStatus(Boolean status);
     List<QueriesDto> fetchByNewJoinerId(Long newJoinerId);
+    List<QueriesDto> fetchByMentorIdStatus(Long mentorId,Boolean status);
 }

@@ -23,7 +23,7 @@ public class QueriesServiceImpl implements IQueriesService {
     private final QueriesRepository queriesRepository;
 
     @Override
-    public void createAccount(QueriesDto queriesDto){
+    public void createQuery(QueriesDto queriesDto){
 
         Queries queries = QueriesMapper.mapToQueries(queriesDto, new Queries());
 //        customer.setCreatedAt(LocalDateTime.now());
@@ -67,6 +67,19 @@ public class QueriesServiceImpl implements IQueriesService {
         List<QueriesDto> allQueriesDto= new ArrayList<>();
         for(Queries queries:allQueries) {
             if(queries.getMentorId()==mentorId) {
+                QueriesDto queryDto = QueriesMapper.mapToQueriesDto(queries, new QueriesDto());
+                allQueriesDto.add(queryDto);
+            }
+        }
+        return allQueriesDto;
+    }
+
+    @Override
+    public List<QueriesDto> fetchByMentorIdStatus(Long mentorId,Boolean status) {
+        List<Queries> allQueries= queriesRepository.findAll();
+        List<QueriesDto> allQueriesDto= new ArrayList<>();
+        for(Queries queries:allQueries) {
+            if(queries.getMentorId()==mentorId && queries.isStatus() == status) {
                 QueriesDto queryDto = QueriesMapper.mapToQueriesDto(queries, new QueriesDto());
                 allQueriesDto.add(queryDto);
             }
