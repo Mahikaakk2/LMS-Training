@@ -22,4 +22,5 @@ public interface ICourseService {
 
     List<CourseDto> getAllCourseDetails(int mentorId);
 
+    List<CourseDto> getCoursesUsingMentorIdAndIsApproved(int mentorId, boolean isApproved);
 }

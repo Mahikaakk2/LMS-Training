@@ -119,5 +119,14 @@ public class CourseServiceImpl implements ICourseService {
                 .collect(Collectors.toList());
     }
 
+    //api function to retrieve the courses using mentor id and isApproved
+    @Override
+    public List<CourseDto> getCoursesUsingMentorIdAndIsApproved(int mentorId, boolean isApproved) {
+        List<Course> courses=courseRepository.findByCreatedByAndIsApproved(mentorId,isApproved);
+        return courses.stream()
+                .map(course -> CourseMapper.mapToCoursesDto(course, new CourseDto())) // Map each Course entity to CourseDto
+                .collect(Collectors.toList());
+    }
+
 
 }
