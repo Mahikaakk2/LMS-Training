@@ -8,6 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -82,7 +83,7 @@ public class QueryControllerTest {
     @Test
     public void testUpdateQueries() {
         // Mock data and behavior
-        int queryId = 123;
+        Long queryId= (Long)1;
         when(queriesService.updateQuery(queryId)).thenReturn(true);
 
         // Perform the request

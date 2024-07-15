@@ -11,7 +11,7 @@ public interface IQueriesService {
 
     boolean updateQuery(String responseText, Long queryId);
     List<QueriesDto> fetchAllQueries();
-    List<QueriesDto> fetchByMentorId(int mentorId);
+    List<QueriesDto> fetchByMentorId(Long mentorId);
     List<QueriesDto> fetchByStatus(Boolean status);
-    List<QueriesDto> fetchByNewJoinerId(int newJoinerId);
+    List<QueriesDto> fetchByNewJoinerId(Long newJoinerId);
 }

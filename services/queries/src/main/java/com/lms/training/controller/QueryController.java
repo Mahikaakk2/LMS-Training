@@ -48,7 +48,7 @@ public class QueryController {
     }
 
     @GetMapping("/fetchByMentorId")
-    public ResponseEntity<List<QueriesDto>> fetchByMentorId(@RequestParam int mentorId){
+    public ResponseEntity<List<QueriesDto>> fetchByMentorId(@RequestParam Long mentorId){
         List<QueriesDto> allQueriesDto = iQueriesService.fetchByMentorId(mentorId);
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -56,7 +56,7 @@ public class QueryController {
     }
 
     @GetMapping("/fetchByNewJoinerId")
-    public ResponseEntity<List<QueriesDto>> fetchByNewJoinerId(@RequestParam int newJoinerId){
+    public ResponseEntity<List<QueriesDto>> fetchByNewJoinerId(@RequestParam Long newJoinerId){
         List<QueriesDto> allQueriesDto = iQueriesService.fetchByNewJoinerId(newJoinerId);
         return ResponseEntity
                 .status(HttpStatus.OK)

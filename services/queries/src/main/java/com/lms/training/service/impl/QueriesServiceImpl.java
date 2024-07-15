@@ -61,7 +61,7 @@ public class QueriesServiceImpl implements IQueriesService {
     }
 
     @Override
-    public List<QueriesDto> fetchByMentorId(int mentorId){
+    public List<QueriesDto> fetchByMentorId(Long mentorId){
 
         List<Queries> allQueries= queriesRepository.findAll();
         List<QueriesDto> allQueriesDto= new ArrayList<>();
@@ -75,7 +75,7 @@ public class QueriesServiceImpl implements IQueriesService {
     }
 
     @Override
-    public List<QueriesDto> fetchByNewJoinerId(int newJoinerId) {
+    public List<QueriesDto> fetchByNewJoinerId(Long newJoinerId) {
         List<Queries> allQueries= queriesRepository.findAll();
         List<QueriesDto> allQueriesDto= new ArrayList<>();
         for(Queries queries:allQueries) {
