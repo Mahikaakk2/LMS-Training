@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: "accounts"
+    name: "enrollments"
   config:
     import: "optional:configserver:http://localhost:8071/"
 

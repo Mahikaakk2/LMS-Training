@@ -1,13 +1,16 @@
 package com.lms.training.service.impl;
 
 import com.lms.training.dto.UserDto;
+import com.lms.training.dto.CourseDto;
 import com.lms.training.entity.User;
 import com.lms.training.exception.MentorDeletionException;
+import com.lms.training.exception.MentorNotFindException;
 import com.lms.training.exception.ResourceNotFoundException;
 import com.lms.training.exception.UserAlreadyExistsException;
 import com.lms.training.mapper.UserMapper;
 import com.lms.training.repository.UserRepository;
 import com.lms.training.service.IUserService;
+import com.lms.training.service.clients.CoursesFeignClient;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,12 +18,12 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Random;
 
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements IUserService {
     private final UserRepository userRepository;
+    private final CoursesFeignClient coursesFeignClient;
 
 
     @Override
@@ -111,5 +114,33 @@ public class UserServiceImpl implements IUserService {
         }
         return isDeleted;
     }
+
+    @Override
+    public List<CourseDto> fetchAllCoursesByStatus(Long createdBy, boolean isApproved) {
+        List<UserDto> usersDtos = fetchAllUsersByRole("mentor");
+
+        List<User> users=new ArrayList<>();
+
+        for(UserDto userdto : usersDtos) {
+                User user= UserMapper.mapToUser(userdto,new User());
+                users.add(user);
+        }
+
+        List<CourseDto> courseDtos=new ArrayList<>();
+        boolean flag=false;
+        for(User user : users) {
+            if(user.getUserId().equals(createdBy)) {
+                courseDtos = (List<CourseDto>) coursesFeignClient.fetchCourseDetailsByMentorIDAStatus(createdBy,isApproved);
+                flag=true;
+                break;
+            }
+        }
+        if(!flag) {
+            throw new MentorNotFindException("Cannot find the mentor.");
+        }
+        return courseDtos;
+    }
+
+
 
 }
