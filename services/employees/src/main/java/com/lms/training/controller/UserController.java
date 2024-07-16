@@ -1,6 +1,7 @@
 package com.lms.training.controller;
 
 
+import com.lms.training.dto.CourseDto;
 import com.lms.training.dto.ResponseDto;
 import com.lms.training.dto.UserDto;
 import com.lms.training.service.IUserService;
@@ -51,6 +52,14 @@ public class UserController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(userDto);
+    }
+
+    @GetMapping("/getAllCourses")
+    public ResponseEntity<List<CourseDto>> fetchAllCoursesByStatus(@RequestParam Long createdBy,boolean isApproved) {
+        List<CourseDto> courseDto= iUserService.fetchAllCoursesByStatus(createdBy,isApproved);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(courseDto);
     }
 
 

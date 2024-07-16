@@ -51,7 +51,7 @@ public class Course {
 //    @CreatedDate
 //    @Column(updatable = false)
     @NotNull(message = "Created by can not be empty")
-    private int createdBy;
+    private Long createdBy;
 
 //    @LastModifiedDate
 //    @Column(insertable = false)

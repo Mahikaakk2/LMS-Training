@@ -6,7 +6,7 @@ import com.lms.training.entity.User;
 public class UserMapper {
 
     public static UserDto mapToUserDto(User user, UserDto userDto){
-
+        userDto.setUserId(user.getUserId());
         userDto.setFirstName(user.getFirstName());
         userDto.setLastName(user.getLastName());
         userDto.setEmail(user.getEmail());
@@ -24,6 +24,7 @@ public class UserMapper {
         user.setPassword(userDto.getPassword());
         user.setRole(userDto.getRole());
         user.setMobileNumber(userDto.getMobileNumber());
+        user.setUserId(userDto.getUserId());
 
         return user;
     }
