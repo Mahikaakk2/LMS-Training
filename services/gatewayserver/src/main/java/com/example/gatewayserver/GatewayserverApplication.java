@@ -32,7 +32,7 @@ public class GatewayserverApplication {
 		.route(p -> p
 				.path("/lms/enrollments/**")
 				.filters(f -> f.rewritePath("/lms/enrollments/(?<segment>.*)", "/${segment}"))
-				.uri("lb://ENROLLMENT")
+				.uri("lb://ENROLLMENTS")
 		)
 				.build();
 
