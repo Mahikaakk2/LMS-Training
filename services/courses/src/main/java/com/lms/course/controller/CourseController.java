@@ -99,7 +99,7 @@ public class CourseController {
 
     //api end point to get all the courses of a particular mentor or instructor
     @GetMapping("/getAllCourses")
-    public ResponseEntity<List<CourseDto>> fetchCourseDetails(@RequestParam int mentorId){
+    public ResponseEntity<List<CourseDto>> fetchCourseDetails(@RequestParam Long mentorId){
 
         List<CourseDto> courseDtoList=iCourseService.getAllCourseDetails(mentorId);
         return ResponseEntity
@@ -107,6 +107,27 @@ public class CourseController {
                 .body(courseDtoList);
     }
 
+    @GetMapping("/getAllCoursesByStatus")
+    public ResponseEntity<List<CourseDto>> fetchCourseDetailsByMentorIDAStatus(@RequestParam Long createdBy,boolean isApproved){
+
+        List<CourseDto> courseDtoList=iCourseService.getAllCourseDetailsByStatus(createdBy,isApproved);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(courseDtoList);
+    }
+
+
+
+    //api to fetch the course details based on two parameters one is mentorId and another is isApproved
+
+    @GetMapping("/fetch-mentorId-isApproved")
+    public ResponseEntity<List<CourseDto>> fetchUsingMentorIdIsApproved(@RequestParam int mentorId,@RequestParam boolean isApproved){
+
+        List<CourseDto> courseDtoList=iCourseService.getCoursesUsingMentorIdAndIsApproved(mentorId,isApproved);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(courseDtoList);
+    }
 
     @GetMapping("/hello")
     public ResponseEntity<String> hello(){

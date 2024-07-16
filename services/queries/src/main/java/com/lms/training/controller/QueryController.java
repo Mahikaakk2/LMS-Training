@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.swing.text.StyledEditorKit;
 import java.util.List;
 
 @Validated
@@ -22,7 +23,7 @@ public class QueryController {
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@Valid @RequestBody QueriesDto queriesDto){
-        iQueriesService.createAccount(queriesDto);
+        iQueriesService.createQuery(queriesDto);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(new ResponseDto("201", "Created Successfully"));
@@ -44,11 +45,10 @@ public class QueryController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(allQueries);
-
     }
 
     @GetMapping("/fetchByMentorId")
-    public ResponseEntity<List<QueriesDto>> fetchByMentorId(@RequestParam int mentorId){
+    public ResponseEntity<List<QueriesDto>> fetchByMentorId(@RequestParam Long mentorId){
         List<QueriesDto> allQueriesDto = iQueriesService.fetchByMentorId(mentorId);
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -56,7 +56,7 @@ public class QueryController {
     }
 
     @GetMapping("/fetchByNewJoinerId")
-    public ResponseEntity<List<QueriesDto>> fetchByNewJoinerId(@RequestParam int newJoinerId){
+    public ResponseEntity<List<QueriesDto>> fetchByNewJoinerId(@RequestParam Long newJoinerId){
         List<QueriesDto> allQueriesDto = iQueriesService.fetchByNewJoinerId(newJoinerId);
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -66,6 +66,14 @@ public class QueryController {
     @GetMapping("/fetchByStatus")
     public ResponseEntity<List<QueriesDto>> fetchByStatus(@RequestParam Boolean status){
         List<QueriesDto> allQueriesDto = iQueriesService.fetchByStatus(status);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(allQueriesDto);
+    }
+
+    @GetMapping("/fetchByMentorIdStatus")
+    public ResponseEntity<List<QueriesDto>> fetchByMentorIdStatus(@RequestParam Long mentorId, @RequestParam Boolean status){
+        List<QueriesDto> allQueriesDto = iQueriesService.fetchByMentorIdStatus(mentorId, status);
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(allQueriesDto);

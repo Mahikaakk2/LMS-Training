@@ -111,9 +111,33 @@ public class CourseServiceImpl implements ICourseService {
 
     //api to get all the courses of a particular mentor
     @Override
-    public List<CourseDto> getAllCourseDetails(int mentorId) {
+    public List<CourseDto> getAllCourseDetails(Long mentorId) {
         List<Course> courses=courseRepository.findBycreatedBy(mentorId);
 
+        return courses.stream()
+                .map(course -> CourseMapper.mapToCoursesDto(course, new CourseDto())) // Map each Course entity to CourseDto
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<CourseDto> getAllCourseDetailsByStatus(Long createdBy,boolean isApproved) {
+        List<Course> courses=courseRepository.findBycreatedBy(createdBy);
+        List<CourseDto> courseDtos=new ArrayList<>();
+        for (Course course : courses) {
+            if(course.isApproved()==isApproved) {
+                CourseDto courseDto = CourseMapper.mapToCoursesDto(course, new CourseDto());
+                courseDtos.add(courseDto);
+            }
+        }
+
+        return courseDtos;
+    }
+
+
+    //api function to retrieve the courses using mentor id and isApproved
+    @Override
+    public List<CourseDto> getCoursesUsingMentorIdAndIsApproved(int mentorId, boolean isApproved) {
+        List<Course> courses=courseRepository.findByCreatedByAndIsApproved(mentorId,isApproved);
         return courses.stream()
                 .map(course -> CourseMapper.mapToCoursesDto(course, new CourseDto())) // Map each Course entity to CourseDto
                 .collect(Collectors.toList());

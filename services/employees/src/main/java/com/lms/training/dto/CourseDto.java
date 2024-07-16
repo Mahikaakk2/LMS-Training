@@ -1,10 +1,11 @@
-package com.lms.course.dto;
+package com.lms.training.dto;
 
-import java.sql.Time;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.sql.Time;
 
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor
 public class CourseDto {
@@ -16,5 +17,5 @@ public class CourseDto {
     private String courseResource;
     private String courseCategory;
     private boolean isApproved;
-    private Long createdBy;
+    private int createdBy;
 }

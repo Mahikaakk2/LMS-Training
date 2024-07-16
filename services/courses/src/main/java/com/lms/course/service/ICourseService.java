@@ -20,6 +20,8 @@ public interface ICourseService {
 
     CourseDto fetchCourseDetailById(int courseId);
 
-    List<CourseDto> getAllCourseDetails(int mentorId);
+    List<CourseDto> getAllCourseDetails(Long mentorId);
+    List<CourseDto> getAllCourseDetailsByStatus(Long createdBy,boolean isApproved);
 
+    List<CourseDto> getCoursesUsingMentorIdAndIsApproved(int mentorId, boolean isApproved);
 }
