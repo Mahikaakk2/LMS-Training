@@ -29,7 +29,7 @@ public class Queries {
     @NotEmpty(message = "Query Text can not be empty")
     private String queryText;
 
-    private String ResponseText;
+    private String responseText;
 
     @NotNull(message = "New Joiner ID can not be empty")
     private Long newJoinerId;
