@@ -31,7 +31,7 @@ public class CourseController {
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@Valid @RequestBody CourseDto courseDto){
         iCourseService.createCourse(courseDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto("201","Created Sucessfully"));
+        return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto("201","Created Successfully"));
     }
 
     @GetMapping("/fetchAllPending")

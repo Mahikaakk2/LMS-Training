@@ -1,4 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ad5bf02-99ad-41a3-9338-51c42c0417aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/courses/src/test/java/com/lms/training/controller/CourseControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees/src/test/java/com/lms/training/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/test/java/com/lms/training/controller/QueryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/test/java/com/lms/training/controller/QueryControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="QueryControllerTest" />
+    </enabled-run-configurations>
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CourseApplication.executor": "Run",
+    "Application.QueryApplication.executor": "Run",
+    "Application.UserApplication.executor": "Run",
+    "JUnit.CourseControllerTest.executor": "Run",
+    "JUnit.QueryControllerTest.executor": "Run",
+    "JUnit.QueryControllerTest.testHelloWorld.executor": "Run",
+    "JUnit.TrainingApplicationTests.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.testCreateUser.executor": "Run",
+    "git-widget-placeholder": "paridhi-branch",
+    "last_opened_file_path": "C:/Users/paridhi.gupta/OneDrive - UKG/Documents/LMS-frontend"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.QueryControllerTest">
+    <configuration name="QueryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.QueryApplication" />
+      <module name="queries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.QueryControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryControllerTest.testHelloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.QueryControllerTest" />
+      <option name="METHOD_NAME" value="testHelloWorld" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testCreateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QueryControllerTest" />
+        <item itemvalue="Application.QueryApplication" />
+        <item itemvalue="JUnit.QueryControllerTest.testHelloWorld" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.testCreateUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
 </project>
