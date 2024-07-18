@@ -141,6 +141,16 @@ public class UserServiceImpl implements IUserService {
         return courseDtos;
     }
 
-
+  @Override
+  public String fetchEmailByID(Long id){
+      List<User> users = userRepository.findAll();
+      String email= "";
+      for(User user : users) {
+          if(user.getUserId().equals(id)) {
+              email = user.getEmail();
+          }
+      }
+      return email;
+  }
 
 }

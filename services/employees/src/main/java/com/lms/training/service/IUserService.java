@@ -13,4 +13,5 @@ public interface IUserService {
     boolean updateUserDetails(String email,UserDto userDto);
     boolean deleteUser(String email);
     List<CourseDto> fetchAllCoursesByStatus(Long createdBy,boolean isApproved);
+    String fetchEmailByID(Long id);
 }

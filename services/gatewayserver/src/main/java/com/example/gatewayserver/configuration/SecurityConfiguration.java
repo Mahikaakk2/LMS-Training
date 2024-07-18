@@ -24,10 +24,15 @@ public class SecurityConfiguration {
     public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity httpSecurity) {
         httpSecurity.authorizeExchange(exchange -> exchange
                 .pathMatchers(HttpMethod.GET).permitAll()
-                .pathMatchers(HttpMethod.POST,"/lms/courses/**").authenticated()
-                .pathMatchers(HttpMethod.PUT, "/lms/courses/**").authenticated()
-                .pathMatchers(HttpMethod.DELETE, "/lms/courses/**").authenticated()
-                .pathMatchers(HttpMethod.PATCH, "/lms/courses/**").authenticated()
+                        .pathMatchers(HttpMethod.POST).permitAll()
+                        .pathMatchers(HttpMethod.PUT).permitAll()
+                        .pathMatchers(HttpMethod.DELETE).permitAll()
+                        .pathMatchers(HttpMethod.PATCH).permitAll()
+
+//                .pathMatchers(HttpMethod.POST,"/lms/courses/**").authenticated()
+//                .pathMatchers(HttpMethod.PUT, "/lms/courses/**").authenticated()
+//                .pathMatchers(HttpMethod.DELETE, "/lms/courses/**").authenticated()
+//                .pathMatchers(HttpMethod.PATCH, "/lms/courses/**").authenticated()
 //                .pathMatchers("/synergybank/loans/**").hasRole("LOANS")
 //                .pathMatchers("/synergybank/cards/**").hasRole("CARDS")
         ).oauth2ResourceServer(config -> config.jwt(spec -> spec.jwtAuthenticationConverter(grantedAuthorityExtractor())));

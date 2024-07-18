@@ -1,6 +1,6 @@
 services:
   configserver:
-    image: mahikakushwaha563/configserver:2.0.0
+    image: aditikumari823/configserver:2.0.0
     container_name: configserver
     ports:
       - "8071:8071"
@@ -17,7 +17,7 @@ services:
     networks:
       - synergybank
   courses:
-    image: mahikakushwaha563/courses:2.0.0
+    image: aditikumari823/courses:2.0.0
     container_name: "courses-ms"
     ports:
       - "8090:8090"
@@ -35,7 +35,7 @@ services:
     networks:
       - synergybank
   employees:
-    image: mahikakushwaha563/employees:2.0.0
+    image: aditikumari823/employees:2.0.0
     container_name: "employees-ms"
     ports:
       - "9000:9000"
@@ -53,7 +53,7 @@ services:
     networks:
       - synergybank
   queries:
-    image: mahikakushwaha563/queries:2.0.0
+    image: aditikumari823/queries:2.0.0
     container_name: "queries-ms"
     ports:
       - "8070:8070"
@@ -71,7 +71,7 @@ services:
     networks:
       - synergybank
   enrollment:
-    image: mahikakushwaha563/enrollment:2.0.0
+    image: aditikumari823/enrollment:2.0.0
     container_name: "enrollment-ms"
     ports:
       - "8080:8080"
