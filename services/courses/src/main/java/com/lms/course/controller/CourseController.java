@@ -81,7 +81,7 @@ public class CourseController {
     public ResponseEntity<List<CourseDto>> fetchAllCourses(){
 
         List<CourseDto> courses =iCourseService.fetchAllCourseDetails();
-
+        System.out.println();
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(courses);

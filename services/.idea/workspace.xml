@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
+<<<<<<< HEAD
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ff6992e-d96b-4494-823a-8dcff47475fe" name="Changes" comment="" />
+=======
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dae9c8e-e64b-4530-b040-620fd03f3aa0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" afterDir="false" />
+    </list>
+>>>>>>> 2ef7805009ac3acf973b9fb08e49df44a616540a
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -74,6 +85,47 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="courses" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.course.CourseApplication" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Mahikaakk2"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mahikaakk2/LMS-Training.git",
+    "accountId": "2f05da47-b3df-4767-98c8-2a8acec7ed1c"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2jMnsj5xULKrInYMOLWtvx4CRnf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CourseApplication.executor": "Debug",
+    "Application.TrainingApplicationEnrollments.executor": "Debug",
+    "JUnit.All in enrollment.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupAngularLMS/lms-angular-project"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.CourseApplication">
+    <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lms.course.CourseApplication" />
+      <module name="courses" />
+>>>>>>> 2ef7805009ac3acf973b9fb08e49df44a616540a
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lms.course.*" />
@@ -84,6 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eurekaserver" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sk.eurekaserver.EurekaserverApplication" />
@@ -125,6 +178,11 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="enrollment" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.training.TrainingApplicationEnrollments" />
+=======
+    <configuration name="TrainingApplicationEnrollments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.TrainingApplicationEnrollments" />
+      <module name="enrollment" />
+>>>>>>> 2ef7805009ac3acf973b9fb08e49df44a616540a
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lms.training.*" />
@@ -135,6 +193,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="employees" />
@@ -145,12 +204,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+    <configuration name="All in enrollment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="enrollment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+>>>>>>> 2ef7805009ac3acf973b9fb08e49df44a616540a
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Spring Boot.QueryApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.TrainingApplicationEnrollments" />
@@ -160,6 +226,23 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+=======
+        <item itemvalue="Application.CourseApplication" />
+        <item itemvalue="Application.TrainingApplicationEnrollments" />
+        <item itemvalue="JUnit.All in enrollment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dae9c8e-e64b-4530-b040-620fd03f3aa0" name="Changes" comment="" />
+      <created>1721206021315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721206021315</updated>
+    </task>
+>>>>>>> 2ef7805009ac3acf973b9fb08e49df44a616540a
     <servers />
   </component>
 </project>
