@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ad5bf02-99ad-41a3-9338-51c42c0417aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/src/test/java/com/lms/training/controller/CourseControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employees/src/test/java/com/lms/training/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courses/src/main/java/com/lms/course/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employees/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/queries/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/src/test/java/com/lms/training/controller/QueryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/test/java/com/lms/training/controller/QueryControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,27 +23,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="QueryControllerTest" />
-    </enabled-run-configurations>
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CourseApplication.executor": "Run",
-    "Application.QueryApplication.executor": "Run",
-    "Application.UserApplication.executor": "Run",
-    "JUnit.CourseControllerTest.executor": "Run",
-    "JUnit.QueryControllerTest.executor": "Run",
-    "JUnit.QueryControllerTest.testHelloWorld.executor": "Run",
-    "JUnit.TrainingApplicationTests.executor": "Run",
-    "JUnit.UserControllerTest.executor": "Run",
-    "JUnit.UserControllerTest.testCreateUser.executor": "Run",
-    "git-widget-placeholder": "paridhi-branch",
-    "last_opened_file_path": "C:/Users/paridhi.gupta/OneDrive - UKG/Documents/LMS-frontend"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CourseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QueryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourseControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueryControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueryControllerTest.testHelloWorld.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testCreateUser.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;paridhi-branch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/paridhi.gupta/OneDrive - UKG/Documents/LMS-frontend&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.QueryControllerTest">
+}</component>
+  <component name="RunManager" selected="Application.QueryApplication">
     <configuration name="QueryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lms.training.QueryApplication" />
       <module name="queries" />
@@ -127,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QueryControllerTest" />
         <item itemvalue="Application.QueryApplication" />
+        <item itemvalue="JUnit.QueryControllerTest" />
         <item itemvalue="JUnit.QueryControllerTest.testHelloWorld" />
         <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.UserControllerTest.testCreateUser" />

@@ -30,12 +30,12 @@ public class QueryController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<ResponseDto> updateQueries(@RequestBody String responseText, @RequestParam Long queryId){
+    public ResponseEntity<ResponseDto> updateQueries(@RequestParam String responseText, @RequestParam Long queryId){
         boolean isUpdated = iQueriesService.updateQuery(responseText, queryId);
         if(isUpdated){
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto("204","Updated Sucessfully"));
         }else{
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ResponseDto("500","Update Unsucessfully"));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ResponseDto("500","Update Unsuccessful"));
         }
     }
 
