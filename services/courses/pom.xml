@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>courses</name>
-	<description>Account Service for Synergy Bank</description>
+	<description>Courses for LMS</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -110,6 +110,9 @@
 					<to>
 						<image>aditikumari823/${project.artifactId}:2.0.0</image>
 					</to>
+					<container>
+						<mainClass>com.lms.course.CourseApplication</mainClass> <!-- Specify your main class -->
+					</container>
 				</configuration>
 			</plugin>
 		</plugins>
