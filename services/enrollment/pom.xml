@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>enrollment</name>
-	<description>Account Service for Synergy Bank</description>
+	<description>Enrollments for LMS</description>
 	<url/>
 	<licenses>
 		<license/>
