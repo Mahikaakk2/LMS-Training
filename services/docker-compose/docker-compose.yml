@@ -1,6 +1,6 @@
 services:
   configserver:
-    image: mahikakushwaha563/configserver:2.0.0
+    image: aditikumari823/configserver:2.0.0
     container_name: configserver
     ports:
       - "8071:8071"
@@ -16,8 +16,35 @@ services:
           memory: 700m
     networks:
       - synergybank
+  eurekaserver:
+    image: aditikumari823/eurekaserver:2.0.0
+    container_name: "eurekaserver"
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test: "curl --fail --silent localhost:3000/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      start_period: 10s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_APPLICATION_NAME: "eurekaserver"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - synergybank
+
+
+
   courses:
-    image: mahikakushwaha563/courses:2.0.0
+    image: aditikumari823/courses:2.0.0
     container_name: "courses-ms"
     ports:
       - "8090:8090"
@@ -30,12 +57,12 @@ services:
       SPRING_APPLICATION_NAME: "courses"
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
     depends_on:
-      configserver:
+      eurekaserver:
         condition: service_healthy
     networks:
       - synergybank
   employees:
-    image: mahikakushwaha563/employees:2.0.0
+    image: aditikumari823/employees:2.0.0
     container_name: "employees-ms"
     ports:
       - "9000:9000"
@@ -48,12 +75,12 @@ services:
       SPRING_APPLICATION_NAME: "employees"
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
     depends_on:
-      configserver:
+      eurekaserver:
         condition: service_healthy
     networks:
       - synergybank
   queries:
-    image: mahikakushwaha563/queries:2.0.0
+    image: aditikumari823/queries:2.0.0
     container_name: "queries-ms"
     ports:
       - "8070:8070"
@@ -66,12 +93,12 @@ services:
       SPRING_APPLICATION_NAME: "queries"
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
     depends_on:
-      configserver:
+      eurekaserver:
         condition: service_healthy
     networks:
       - synergybank
   enrollment:
-    image: mahikakushwaha563/enrollment:2.0.0
+    image: aditikumari823/enrollment:2.0.0
     container_name: "enrollment-ms"
     ports:
       - "8080:8080"
@@ -84,10 +111,31 @@ services:
       SPRING_APPLICATION_NAME: "enrollment"
       SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
     depends_on:
-      configserver:
+      eurekaserver:
         condition: service_healthy
     networks:
       - synergybank
+  gatewayserver:
+    image: aditikumari823/gatewayserver:2.0.0
+    container_name: "gatewayserver"
+    ports:
+      - "8072:8072"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_APPLICATION_NAME: "gatewayserver"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
+    depends_on:
+      - courses
+      - employees
+      - queries
+      - enrollment
+    networks:
+      - synergybank
+
 
 networks:
   synergybank:

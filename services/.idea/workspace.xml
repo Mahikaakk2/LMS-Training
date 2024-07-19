@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dae9c8e-e64b-4530-b040-620fd03f3aa0" name="Changes" comment="">
+    <list default="true" id="1094b43a-dc14-42a3-8d8e-5f8d38f37444" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/courses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/target/classes/com/example/gatewayserver/GatewayserverApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/target/classes/com/example/gatewayserver/GatewayserverApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/src/main/java/com/lms/training/TrainingApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reponses/src/test/java/com/lms/training/TrainingApplicationTests.java" beforeDir="false" />
+>>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +34,17 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
+<<<<<<< HEAD
     &quot;assignee&quot;: &quot;Mahikaakk2&quot;
+=======
+    &quot;assignee&quot;: &quot;Aditiii18&quot;
+>>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Mahikaakk2/LMS-Training.git&quot;,
+<<<<<<< HEAD
     &quot;accountId&quot;: &quot;2f05da47-b3df-4767-98c8-2a8acec7ed1c&quot;
   }
 }</component>
@@ -32,12 +53,22 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2jMnsj5xULKrInYMOLWtvx4CRnf" />
+=======
+    &quot;accountId&quot;: &quot;a8b4782c-005e-4ddd-8077-2233a1d2de4f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2jPULxGvDWaYvrWOVHHNhwYll8Y" />
+>>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "Application.ConfigserverApplication.executor": "Run",
     "Application.CourseApplication.executor": "Run",
     "Application.EurekaserverApplication.executor": "Run",
@@ -47,10 +78,21 @@
     "JUnit.All in enrollment.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "paridhi-branch",
+=======
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "aditi-branch",
+>>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mahika.kushwaha/OneDrive - UKG/Desktop/GroupAngularLMS/lms-angular-project"
+    "last_opened_file_path": "C:/Users/aditi.kumari/IdeaProjects/EmailService/queries",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.CourseApplication">
     <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lms.course.CourseApplication" />
@@ -126,16 +168,30 @@
         <item itemvalue="Application.EurekaserverApplication" />
       </list>
     </recent_temporary>
+=======
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+>>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6dae9c8e-e64b-4530-b040-620fd03f3aa0" name="Changes" comment="" />
-      <created>1721206021315</created>
+      <changelist id="1094b43a-dc14-42a3-8d8e-5f8d38f37444" name="Changes" comment="" />
+      <created>1721288153828</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1721206021315</updated>
+      <updated>1721288153828</updated>
+      <workItem from="1721288154892" duration="818000" />
+      <workItem from="1721292010322" duration="5186000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

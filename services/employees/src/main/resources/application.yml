@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: "employee"
-  profiles:
-    active: 'qa'
   config:
     import: "optional:configserver:http://localhost:8071/"
   devtools:
@@ -22,6 +20,23 @@ spring:
   h2:
     console:
       enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
+  cloud:
+    function:
+      definition: email
+    stream:
+      bindings:
+        email-in-0:
+          destination: send-communication
+          group: ${spring.application.name}
+        email-out-0:
+          destination: communication-sent
+
 management:
   endpoints:
     web:
@@ -50,3 +65,4 @@ info:
     name: "Employees Microservice"
     description: "Employees Microservice for LMS"
     version: "1.0.0"
+

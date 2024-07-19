@@ -15,4 +15,5 @@ public interface IQueriesService {
     List<QueriesDto> fetchByStatus(Boolean status);
     List<QueriesDto> fetchByNewJoinerId(Long newJoinerId);
     List<QueriesDto> fetchByMentorIdStatus(Long mentorId,Boolean status);
+
 }

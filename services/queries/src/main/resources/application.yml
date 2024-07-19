@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: "queries"
-  profiles:
-    active: 'qa'
   config:
     import: "optional:configserver:http://localhost:8071/"
   devtools:
@@ -22,6 +20,33 @@ spring:
   h2:
     console:
       enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
+  cloud:
+#    function:
+#      definition: sendEmailToUsers
+    stream:
+      bindings:
+        sendCommunication-out-0:
+          destination: send-communication
+        sendEmailToUsers-in-0:
+          destination: communication-sent
+          group: ${spring.application.name}
+  mail:
+    username: aditisingh27022002@gmail.com
+    host: smtp.gmail.com
+    port: 587
+    password: "nvsy uott dchm akuv"
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
 management:
   endpoints:
     web:
@@ -50,3 +75,6 @@ info:
     name: "Query Microservice"
     description: "Query Microservice for LMS"
     version: "1.0.0"
+
+
+
