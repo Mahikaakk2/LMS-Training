@@ -48,7 +48,7 @@ public class QueriesDto {
             description = "Response Text of Query", example = "This is the answer"
     )
 
-    private String ResponseText;
+    private String responseText;
     @Schema(
             description = "Status of Query", example = "false"
     )

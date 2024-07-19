@@ -4,122 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1094b43a-dc14-42a3-8d8e-5f8d38f37444" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="8ad5bf02-99ad-41a3-9338-51c42c0417aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/courses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courses/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/target/classes/com/example/gatewayserver/GatewayserverApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/target/classes/com/example/gatewayserver/GatewayserverApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/src/main/java/com/lms/training/TrainingApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reponses/src/test/java/com/lms/training/TrainingApplicationTests.java" beforeDir="false" />
->>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
+      <change beforePath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/queries/src/main/java/com/lms/training/controller/QueryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-<<<<<<< HEAD
-    &quot;assignee&quot;: &quot;Mahikaakk2&quot;
-=======
-    &quot;assignee&quot;: &quot;Aditiii18&quot;
->>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CourseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QueryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourseControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueryControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QueryControllerTest.testHelloWorld.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testCreateUser.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;paridhi-branch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/paridhi.gupta/OneDrive - UKG/Documents/LMS-frontend&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mahikaakk2/LMS-Training.git&quot;,
-<<<<<<< HEAD
-    &quot;accountId&quot;: &quot;2f05da47-b3df-4767-98c8-2a8acec7ed1c&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2jMnsj5xULKrInYMOLWtvx4CRnf" />
-=======
-    &quot;accountId&quot;: &quot;a8b4782c-005e-4ddd-8077-2233a1d2de4f&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2jPULxGvDWaYvrWOVHHNhwYll8Y" />
->>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-<<<<<<< HEAD
-    "Application.ConfigserverApplication.executor": "Run",
-    "Application.CourseApplication.executor": "Run",
-    "Application.EurekaserverApplication.executor": "Run",
-    "Application.QueryApplication.executor": "Run",
-    "Application.TrainingApplicationEnrollments.executor": "Run",
-    "Application.UserApplication.executor": "Run",
-    "JUnit.All in enrollment.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "paridhi-branch",
-=======
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "aditi-branch",
->>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aditi.kumari/IdeaProjects/EmailService/queries",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.CourseApplication">
-    <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lms.course.CourseApplication" />
-      <module name="courses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lms.course.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sk.eurekaserver.EurekaserverApplication" />
-      <module name="eurekaserver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sk.eurekaserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.QueryApplication">
     <configuration name="QueryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lms.training.QueryApplication" />
       <module name="queries" />
@@ -133,65 +52,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainingApplicationEnrollments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lms.training.TrainingApplicationEnrollments" />
-      <module name="enrollment" />
+    <configuration name="QueryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queries" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lms.training.*" />
+          <option name="PATTERN" value="com.lms.training.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.QueryControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lms.training.UserApplication" />
-      <module name="employees" />
+    <configuration name="QueryControllerTest.testHelloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queries" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lms.training.*" />
+          <option name="PATTERN" value="com.lms.training.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.QueryControllerTest" />
+      <option name="METHOD_NAME" value="testHelloWorld" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employees" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lms.training.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lms.training.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lms.training.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testCreateUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CourseApplication" />
-        <item itemvalue="Application.UserApplication" />
-        <item itemvalue="Application.TrainingApplicationEnrollments" />
         <item itemvalue="Application.QueryApplication" />
-        <item itemvalue="Application.EurekaserverApplication" />
+        <item itemvalue="JUnit.QueryControllerTest" />
+        <item itemvalue="JUnit.QueryControllerTest.testHelloWorld" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.testCreateUser" />
       </list>
     </recent_temporary>
-=======
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
->>>>>>> 89325f9af76d7f2bff7dcc52b460691ddb3420e6
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1094b43a-dc14-42a3-8d8e-5f8d38f37444" name="Changes" comment="" />
-      <created>1721288153828</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1721288153828</updated>
-      <workItem from="1721288154892" duration="818000" />
-      <workItem from="1721292010322" duration="5186000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>
